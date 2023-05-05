@@ -593,3 +593,14 @@ Fri 05 May 2023 04:25:51 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 1bea959
+Fri 05 May 2023 04:26:42 AM UTC: 
+ sudoku.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:172:5: error: ‘aux’ undeclared (first use in this function)
+  172 |     aux = first(nodosAdj);
+      |     ^~~
+sudoku.c:172:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4a11e1a

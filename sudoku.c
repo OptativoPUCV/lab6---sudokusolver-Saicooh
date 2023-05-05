@@ -168,12 +168,13 @@ Node *DFS(Node *initial, int *cont)
     if (is_final(node)) return node;
 
     List *nodosAdj = get_adj_nodes(node);
-    nodosAdj = first(nodosAdj);
     
-    while(nodosAdj)
+    aux = first(nodosAdj);
+    
+    while(aux != NULL)
     {
-      push(s, nodosAdj);
-      nodosAdj = next(nodosAdj);
+      push(s, aux);
+      aux = next(nodosAdj);
     }
     free(node);
   }
