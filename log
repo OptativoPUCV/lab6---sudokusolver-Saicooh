@@ -556,3 +556,23 @@ sudoku.c:170:10: error: unused variable ‘nodosAdj’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 edb72c2
+Fri 05 May 2023 04:25:30 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:170:5: error: variable ‘nodosAdj’ has initializer but incomplete type
+  170 |     List nodosAdj = get_adj_nodes(nodo);
+      |     ^~~~
+sudoku.c:170:35: error: ‘nodo’ undeclared (first use in this function); did you mean ‘node’?
+  170 |     List nodosAdj = get_adj_nodes(nodo);
+      |                                   ^~~~
+      |                                   node
+sudoku.c:170:35: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:170:10: error: storage size of ‘nodosAdj’ isn’t known
+  170 |     List nodosAdj = get_adj_nodes(nodo);
+      |          ^~~~~~~~
+sudoku.c:170:10: error: unused variable ‘nodosAdj’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+333ee92

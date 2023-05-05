@@ -164,7 +164,7 @@ Node *DFS(Node *initial, int *cont)
     Node *node = top(s);
     pop(s);
     
-    *cont++;
+    (*cont)++;
     if (is_final(node)) return node;
 
     List nodosAdj = get_adj_nodes(nodo);
