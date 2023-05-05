@@ -91,3 +91,27 @@ list.h:23:33: note: expected ‘void *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 a2d39c1
+Fri 05 May 2023 02:59:38 AM UTC: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:75:27: error: statement with no effect [-Werror=unused-value]
+   75 |           n -> sudo[i][j] == nuevo;
+      |           ~~~~~~~~~~~~~~~~^~~~~~~~
+sudoku.c:79:28: error: passing argument 2 of ‘pushBack’ makes pointer from integer without a cast [-Werror=int-conversion]
+   79 |             pushBack(list, nuevo);
+      |                            ^~~~~
+      |                            |
+      |                            int
+In file included from test.c:4:
+list.h:23:33: note: expected ‘void *’ but argument is of type ‘int’
+   23 | void pushBack(List* list, void* data);
+      |                           ~~~~~~^~~~
+In file included from test.c:5:
+sudoku.c:78:19: error: unused variable ‘adjNode’ [-Werror=unused-variable]
+   78 |             Node *adjNode = copy(n);
+      |                   ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4c2a899
