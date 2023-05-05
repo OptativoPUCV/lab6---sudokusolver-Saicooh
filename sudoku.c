@@ -54,6 +54,28 @@ void print_node(Node* n)
   printf("\n");
 }
 
+int repetidosFila(int fila, Node *n)
+{
+  int numFila[10] = {0}, columna = 0;
+
+  for(columna = 0 ; columna < 9 ; columna++)
+  {
+    if(n -> sudo[fila][columna] != 0)
+    {
+      if (numFila[n -> sudo[fila][columna]] == 1) return 0;
+      else numFila[n -> sudo[fila][columna]] = 1;
+    }
+  }
+  
+  return 1;
+}
+
+int is_valid(Node *n)
+{
+  
+  return 1;
+}
+
 List *get_adj_nodes(Node *n)
 {
   List *list = createList();
@@ -84,27 +106,8 @@ List *get_adj_nodes(Node *n)
   return list;
 }
 
-int repetidosFila(int fila, Node *n)
-{
-  int numFila[10] = {0}, columna = 0;
 
-  for(columna = 0 ; columna < 9 ; columna++)
-  {
-    if(n -> sudo[fila][columna] != 0)
-    {
-      if (numFila[n -> sudo[fila][columna]] == 1) return 0;
-      else numFila[n -> sudo[fila][columna]] = 1;
-    }
-  }
-  
-  return 1;
-}
 
-int is_valid(Node *n)
-{
-  
-  return 1;
-}
 
 int is_final(Node* n)
 {
