@@ -481,3 +481,13 @@ Fri 05 May 2023 03:58:41 AM UTC:
  tests:  3|3
 total_score: 25/70
 0e6a4e9
+Fri 05 May 2023 04:03:30 AM UTC: 
+ sudoku.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:114:3: error: expected expression before ‘}’ token
+  114 |   }
+      |   ^
+Compilation failed
+4600757
