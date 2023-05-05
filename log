@@ -334,3 +334,34 @@ sudoku.c:91:1: error: control reaches end of non-void function [-Werror=return-t
 cc1: all warnings being treated as errors
 Compilation failed
 19eb0f4
+Fri 05 May 2023 03:28:58 AM UTC: 
+ sudoku.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:71:15: error: implicit declaration of function ‘is_valid’ [-Werror=implicit-function-declaration]
+   71 |           if (is_valid(n))
+      |               ^~~~~~~~
+sudoku.c: In function ‘repetidosFila’:
+sudoku.c:95:48: error: expected ‘]’ before ‘)’ token
+   95 |       if (numFila[n -> sudo[fila][columna] == 1) return 0;
+      |                                                ^
+      |                                                ]
+sudoku.c:96:48: error: expected ‘]’ before ‘;’ token
+   96 |       else numFila[n -> sudo[fila][columna] = 1;
+      |                                                ^
+      |                                                ]
+sudoku.c:96:19: error: value computed is not used [-Werror=unused-value]
+   96 |       else numFila[n -> sudo[fila][columna] = 1;
+      |            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   97 |     }
+      |     ~              
+sudoku.c:96:49: error: expected ‘;’ before ‘}’ token
+   96 |       else numFila[n -> sudo[fila][columna] = 1;
+      |                                                 ^
+      |                                                 ;
+   97 |     }
+      |     ~                                            
+cc1: all warnings being treated as errors
+Compilation failed
+dc87891
