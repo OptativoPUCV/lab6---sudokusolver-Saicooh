@@ -97,8 +97,8 @@ int repetidosSubMatriz(int subMatriz, Node *n)
     
     if(n -> sudo[fila][columna] != 0)
     {
-      if (aux[n -> sudo[fila][columna]] == 1) return 0;
-      else aux[n -> sudo[fila][columna]] = 1;
+      if (aux[n -> sudo[i][j]] == 1) return 0;
+      else aux[n -> sudo[i][j]] = 1;
     }
   }
   
