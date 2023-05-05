@@ -239,3 +239,9 @@ sudoku.c:78:28: error: invalid type argument of unary ‘*’ (have ‘int’)
       |                            ^~~~~~
 Compilation failed
 0bb468e
+Fri 05 May 2023 03:06:36 AM UTC: 
+ sudoku.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+f415d9a
