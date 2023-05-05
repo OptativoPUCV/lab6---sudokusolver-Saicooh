@@ -75,7 +75,7 @@ List *get_adj_nodes(Node *n)
           n -> sudo[i][j] = nuevo;
           if (is_valid(n)) 
           {
-            pushBack(list, nuevo);
+            pushBack(list, *nuevo);
           }
         }
         n -> sudo[i][j] = 0;
