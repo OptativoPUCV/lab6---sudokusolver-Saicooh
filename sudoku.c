@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "list.h"
 
-
 typedef struct
 {
   int sudo[9][9];
@@ -39,9 +38,9 @@ Node *read_file(char* file_name)
   return n;
 }
 
-void print_node(Node* n)
+void print_node(Node *n)
 {
-  int i,j;
+  int i, j;
   
   for(i = 0 ; i < 9 ; i++)
   {
@@ -164,7 +163,6 @@ Node *DFS(Node *initial, int *cont)
     Node *node = top(s);
     pop(s);
     
-    (*cont)++;
     if (is_final(node)) return node;
 
     List *nodosAdj = get_adj_nodes(node);
@@ -176,6 +174,8 @@ Node *DFS(Node *initial, int *cont)
       push(s, aux);
       aux = next(nodosAdj);
     }
+    
+    (*cont)++;
     free(node);
   }
   
