@@ -27,11 +27,11 @@ Node *read_file(char* file_name)
   FILE *file = fopen(file_name, "r");
   int i,j;
   
-  for(i=0;i<9;i++)
+  for(i = 0 ; i < 9 ; i++)
   {
-    for(j=0;j<9;j++)
+    for(j = 0 ; j < 9 ; j++)
     {
-      if(!fscanf (file, "%d", &n->sudo[i][j])) printf("failed to read data!");
+      if(!fscanf (file, "%d", &n ->sudo[i][j])) printf("failed to read data!");
     }
   }
 
@@ -64,7 +64,16 @@ List *get_adj_nodes(Node* n)
 {
   List *list= createList();
 
-  
+  for(i = 0 ; i < 9 ; i++)
+  {
+    for(j = 0 ; j < 9 ; j++)
+    {
+      printf("%d ", n -> sudo[i][j]);
+    }
+    printf("\n");
+  }
+  printf("\n");
+}
   
   return list;
 }
