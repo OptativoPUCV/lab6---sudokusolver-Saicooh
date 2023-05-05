@@ -512,3 +512,18 @@ sudoku.c:163:9: error: unused variable ‘s’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 1d2f077
+Fri 05 May 2023 04:09:07 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:163:3: error: variable ‘st’ has initializer but incomplete type
+  163 |   Stack st = createStack(); push(st, initial);
+      |   ^~~~~
+sudoku.c:163:9: error: storage size of ‘st’ isn’t known
+  163 |   Stack st = createStack(); push(st, initial);
+      |         ^~
+sudoku.c:163:9: error: unused variable ‘st’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+3fc9ba0

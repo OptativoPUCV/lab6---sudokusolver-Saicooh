@@ -160,7 +160,7 @@ int is_final(Node* n)
 
 Node *DFS(Node *initial, int *cont)
 {
-  Stack s = createStack(); push(s, initial);
+  Stack st = createStack(); push(st, initial);
 
   
   
