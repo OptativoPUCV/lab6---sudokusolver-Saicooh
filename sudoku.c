@@ -95,7 +95,7 @@ int repetidosSubMatriz(int subMatriz, Node *n)
     int i = 3 * (subMatriz/3) + (p/3);
     int j = 3 * (subMatriz%3) + (p%3);
     
-    if(n -> sudo[fila][columna] != 0)
+    if(n -> sudo[i][j] != 0)
     {
       if (aux[n -> sudo[i][j]] == 1) return 0;
       else aux[n -> sudo[i][j]] = 1;
