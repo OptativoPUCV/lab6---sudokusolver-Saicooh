@@ -365,3 +365,14 @@ sudoku.c:96:49: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 dc87891
+Fri 05 May 2023 03:29:21 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:71:15: error: implicit declaration of function ‘is_valid’ [-Werror=implicit-function-declaration]
+   71 |           if (is_valid(n))
+      |               ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a74b81b

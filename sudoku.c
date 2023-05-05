@@ -92,8 +92,8 @@ int repetidosFila(int fila, Node *n)
   {
     if(n -> sudo[fila][columna] != 0)
     {
-      if (numFila[n -> sudo[fila][columna] == 1) return 0;
-      else numFila[n -> sudo[fila][columna] = 1;
+      if (numFila[n -> sudo[fila][columna]] == 1) return 0;
+      else numFila[n -> sudo[fila][columna]] = 1;
     }
   }
   
