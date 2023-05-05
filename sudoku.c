@@ -110,7 +110,7 @@ int is_valid(Node *n)
   int i;
   for (i = 0 ; i < 9 ; i++)
   {
-    if(repetidosFila(i, n) == 0 || repetidosColumna(i, n) == 0 || repetidosSubMatriz(i, n) == 0)
+    if(repetidosFila(i, n) == 0 || repetidosColumna(i, n) == 0 || repetidosSubMatriz(i, n) == 0) return 0;
   }
   
   return 1;
