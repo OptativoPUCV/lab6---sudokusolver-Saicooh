@@ -70,6 +70,32 @@ int repetidosFila(int fila, Node *n)
   return 1;
 }
 
+int repetidosColumna(int columna, Node *n)
+{
+  int numColumna[10] = {0}, fila = 0;
+
+  for(fila = 0 ; fila < 9 ; fila++)
+  {
+    if(n -> sudo[fila][columna] != 0)
+    {
+      if (numFila[n -> sudo[fila][columna]] == 1) return 0;
+      else numFila[n -> sudo[fila][columna]] = 1;
+    }
+  }
+  
+  return 1;
+}
+
+int repetidosSubMatriz(int subMatriz, Node *n)
+{
+  int k=4,p; 
+for(p=0;p<9;p++){
+    int i=3*(k/3) + (p/3) ;
+    int j=3*(k%3) + (p%3) ;
+    printf("%d ",nodo->sudo[i][j]);
+    if(p%3 == 2) printf("\n");
+}
+}
 int is_valid(Node *n)
 {
   
