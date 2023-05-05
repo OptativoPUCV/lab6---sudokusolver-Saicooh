@@ -76,7 +76,7 @@ List *get_adj_nodes(Node *n)
           if (is_valid(n)) 
           {
             Node *adjNode = copy(n);
-            pushBack(list, nuevo);
+            pushBack(list, adjNode);
           }
         }
         n -> sudo[i][j] = 0;

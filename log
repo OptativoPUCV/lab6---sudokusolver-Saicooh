@@ -195,3 +195,14 @@ sudoku.c:78:19: error: unused variable ‘adjNode’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 2dae9a8
+Fri 05 May 2023 03:04:12 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:75:27: error: statement with no effect [-Werror=unused-value]
+   75 |           n -> sudo[i][j] == nuevo;
+      |           ~~~~~~~~~~~~~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+722f0fc
