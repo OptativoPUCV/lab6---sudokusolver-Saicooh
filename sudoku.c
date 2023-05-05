@@ -60,7 +60,7 @@ int is_valid(Node *n)
 }
 
 
-List *get_adj_nodes(Node* n)
+List *get_adj_nodes(Node *n)
 {
   List *list= createList();
 
@@ -68,7 +68,10 @@ List *get_adj_nodes(Node* n)
   {
     for(int j = 0 ; j < 9 ; j++)
     {
-      printf("%d ", n -> sudo[i][j]);
+      if (n -> sudo[i][j] == 0)
+      {
+        
+      }
     }
     printf("\n");
   }
