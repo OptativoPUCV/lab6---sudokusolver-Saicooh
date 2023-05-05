@@ -167,7 +167,7 @@ Node *DFS(Node *initial, int *cont)
     (*cont)++;
     if (is_final(node)) return node;
 
-    List nodosAdj = get_adj_nodes(nodo);
+    List *nodosAdj = get_adj_nodes(nodo);
     nodosAdj = first(nodosAdj);
     
     while(nodosAdj)
