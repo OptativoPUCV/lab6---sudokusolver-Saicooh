@@ -16,7 +16,7 @@ Node *createNode()
 
 Node *copy(Node *n)
 {
-  Node *new =(Node*) malloc(sizeof(Node));
+  Node *new = (Node*) malloc(sizeof(Node));
   *new = *n;
   return new;
 }
@@ -146,9 +146,6 @@ List *get_adj_nodes(Node *n)
   return list;
 }
 
-
-
-
 int is_final(Node* n)
 {
   for(int i = 0 ; i < 9 ; i++)
@@ -160,7 +157,7 @@ int is_final(Node* n)
 
 Node *DFS(Node *initial, int *cont)
 {
-  Stack st = createStack(); push(st, initial);
+  Stack *s = createStack(); push(s, initial);
 
   
   
