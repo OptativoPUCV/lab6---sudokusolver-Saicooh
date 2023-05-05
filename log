@@ -37,3 +37,25 @@ sudoku.c:76:1: error: control reaches end of non-void function [-Werror=return-t
 cc1: all warnings being treated as errors
 Compilation failed
 c31cfc6
+Fri 05 May 2023 02:46:32 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:65:9: error: unused variable ‘list’ [-Werror=unused-variable]
+   65 |   List *list= createList();
+      |         ^~~~
+sudoku.c: At top level:
+sudoku.c:78:3: error: expected identifier or ‘(’ before ‘return’
+   78 |   return list;
+      |   ^~~~~~
+sudoku.c:79:1: error: expected identifier or ‘(’ before ‘}’ token
+   79 | }
+      | ^
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:76:1: error: control reaches end of non-void function [-Werror=return-type]
+   76 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a5ee742
