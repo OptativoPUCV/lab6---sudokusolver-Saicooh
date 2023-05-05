@@ -171,3 +171,27 @@ sudoku.c:82:22: note: each undeclared identifier is reported only once for each 
 cc1: all warnings being treated as errors
 Compilation failed
 684f6d4
+Fri 05 May 2023 03:02:53 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:75:27: error: statement with no effect [-Werror=unused-value]
+   75 |           n -> sudo[i][j] == nuevo;
+      |           ~~~~~~~~~~~~~~~~^~~~~~~~
+sudoku.c:79:28: error: passing argument 2 of ‘pushBack’ makes pointer from integer without a cast [-Werror=int-conversion]
+   79 |             pushBack(list, nuevo);
+      |                            ^~~~~
+      |                            |
+      |                            int
+In file included from test.c:4:
+list.h:23:33: note: expected ‘void *’ but argument is of type ‘int’
+   23 | void pushBack(List* list, void* data);
+      |                           ~~~~~~^~~~
+In file included from test.c:5:
+sudoku.c:78:19: error: unused variable ‘adjNode’ [-Werror=unused-variable]
+   78 |             Node *adjNode = copy(n);
+      |                   ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2dae9a8

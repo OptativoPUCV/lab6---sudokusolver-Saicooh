@@ -79,7 +79,7 @@ List *get_adj_nodes(Node *n)
             pushBack(list, nuevo);
           }
         }
-        n -> sudo[i][k] = 0;
+        n -> sudo[i][j] = 0;
         return list;
       }
     }
