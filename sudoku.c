@@ -159,6 +159,24 @@ Node *DFS(Node *initial, int *cont)
 {
   Stack *s = createStack(); push(s, initial);
 
+  while(is_empty(s) == 0)
+  {
+    Node *node = top(s);
+    pop(s);
+    
+    *cont++;
+    if (is_final(node)) return node;
+
+    List nodosAdj = get_adj_nodes(nodo);
+    nodosAdj = first(nodosAdj);
+    
+    while(nodosAdj)
+    {
+      push(s, nodosAdj);
+      nodosAdj = next(nodosAdj);
+    }
+    free(node);
+  }
   
   
   return NULL;

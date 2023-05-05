@@ -533,3 +533,26 @@ Fri 05 May 2023 04:15:50 AM UTC:
  tests:  7|1
 total_score: 55/70
 33a7da7
+Fri 05 May 2023 04:25:10 AM UTC: 
+ sudoku.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:167:5: error: value computed is not used [-Werror=unused-value]
+  167 |     *cont++;
+      |     ^~~~~~~
+sudoku.c:170:5: error: variable ‘nodosAdj’ has initializer but incomplete type
+  170 |     List nodosAdj = get_adj_nodes(nodo);
+      |     ^~~~
+sudoku.c:170:35: error: ‘nodo’ undeclared (first use in this function); did you mean ‘node’?
+  170 |     List nodosAdj = get_adj_nodes(nodo);
+      |                                   ^~~~
+      |                                   node
+sudoku.c:170:35: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:170:10: error: storage size of ‘nodosAdj’ isn’t known
+  170 |     List nodosAdj = get_adj_nodes(nodo);
+      |          ^~~~~~~~
+sudoku.c:170:10: error: unused variable ‘nodosAdj’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+edb72c2
