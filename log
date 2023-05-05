@@ -604,3 +604,9 @@ sudoku.c:172:5: error: ‘aux’ undeclared (first use in this function)
 sudoku.c:172:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4a11e1a
+Fri 05 May 2023 04:26:58 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|0
+total_score: 70/70
+e4cca74

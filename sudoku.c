@@ -169,7 +169,7 @@ Node *DFS(Node *initial, int *cont)
 
     List *nodosAdj = get_adj_nodes(node);
     
-    aux = first(nodosAdj);
+    Node *aux = first(nodosAdj);
     
     while(aux != NULL)
     {
