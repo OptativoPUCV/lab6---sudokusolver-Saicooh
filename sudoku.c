@@ -79,11 +79,11 @@ List *get_adj_nodes(Node *n)
             pushBack(list, nuevo);
           }
         }
+        n -> sudo[i][k] = 0;
+        return list;
       }
     }
-    printf("\n");
   }
-  printf("\n");
   
   return list;
 }
