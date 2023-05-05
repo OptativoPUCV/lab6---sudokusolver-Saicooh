@@ -437,3 +437,27 @@ sudoku.c:91:7: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9fcc701
+Fri 05 May 2023 03:58:01 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘repetidosSubMatriz’:
+sudoku.c:98:18: error: ‘fila’ undeclared (first use in this function)
+   98 |     if(n -> sudo[fila][columna] != 0)
+      |                  ^~~~
+sudoku.c:98:18: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:98:24: error: ‘columna’ undeclared (first use in this function)
+   98 |     if(n -> sudo[fila][columna] != 0)
+      |                        ^~~~~~~
+sudoku.c:96:9: error: unused variable ‘j’ [-Werror=unused-variable]
+   96 |     int j = 3 * (subMatriz%3) + (p%3);
+      |         ^
+sudoku.c:95:9: error: unused variable ‘i’ [-Werror=unused-variable]
+   95 |     int i = 3 * (subMatriz/3) + (p/3);
+      |         ^
+sudoku.c:91:7: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   91 |   int aux[10] = {0}, p;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+b582962
