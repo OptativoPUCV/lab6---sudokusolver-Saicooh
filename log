@@ -286,3 +286,30 @@ sudoku.c:89:1: error: control reaches end of non-void function [-Werror=return-t
 cc1: all warnings being treated as errors
 Compilation failed
 3001092
+Fri 05 May 2023 03:20:05 AM UTC: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:71:15: error: implicit declaration of function ‘is_valid’ [-Werror=implicit-function-declaration]
+   71 |           if (is_valid(n))
+      |               ^~~~~~~~
+sudoku.c: In function ‘repetidosFila’:
+sudoku.c:89:26: error: ‘i’ redeclared as different kind of symbol
+   89 |   int numFila[10] = {0}, i = 0;
+      |                          ^
+sudoku.c:87:23: note: previous definition of ‘i’ was here
+   87 | int repetidosFila(int i, Node *n)
+      |                   ~~~~^
+sudoku.c:89:26: error: unused variable ‘i’ [-Werror=unused-variable]
+   89 |   int numFila[10] = {0}, i = 0;
+      |                          ^
+sudoku.c:89:7: error: unused variable ‘numFila’ [-Werror=unused-variable]
+   89 |   int numFila[10] = {0}, i = 0;
+      |       ^~~~~~~
+sudoku.c:91:1: error: control reaches end of non-void function [-Werror=return-type]
+   91 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7a5200f

@@ -83,9 +83,11 @@ List *get_adj_nodes(Node *n)
   
   return list;
 }
+
 int repetidosFila(int i, Node *n)
 {
-    
+  int numFila[10] = {0}, i = 0;
+  
 }
 
 int is_valid(Node *n)
