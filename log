@@ -71,3 +71,23 @@ Fri 05 May 2023 02:51:55 AM UTC:
  tests:  0|5
 total_score: 0/70
 c2c60f3
+Fri 05 May 2023 02:58:19 AM UTC: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:75:27: error: statement with no effect [-Werror=unused-value]
+   75 |           n -> sudo[i][j] == nuevo;
+      |           ~~~~~~~~~~~~~~~~^~~~~~~~
+sudoku.c:76:43: error: passing argument 2 of ‘pushBack’ makes pointer from integer without a cast [-Werror=int-conversion]
+   76 |           if (is_valid(n)) pushBack(list, nuevo);
+      |                                           ^~~~~
+      |                                           |
+      |                                           int
+In file included from test.c:4:
+list.h:23:33: note: expected ‘void *’ but argument is of type ‘int’
+   23 | void pushBack(List* list, void* data);
+      |                           ~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a2d39c1
