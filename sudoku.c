@@ -25,7 +25,7 @@ Node *read_file(char* file_name)
 {
   Node *n = createNode();
   FILE *file = fopen(file_name, "r");
-  int i,j;
+  int i, j;
   
   for(i = 0 ; i < 9 ; i++)
   {
@@ -179,13 +179,9 @@ Node *DFS(Node *initial, int *cont)
     free(node);
   }
   
-  
   return NULL;
 }
 
-
-
-/*
 int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
@@ -196,4 +192,4 @@ int main( int argc, char *argv[] ){
   print_node(final);
 
   return 0;
-}*/
+}
