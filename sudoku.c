@@ -84,7 +84,7 @@ List *get_adj_nodes(Node *n)
   return list;
 }
 
-int repetidosFila(int i, Node *n)
+int repetidosFila(int fila, Node *n)
 {
   int numFila[10] = {0}, i = 0;
   
